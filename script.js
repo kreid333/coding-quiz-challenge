@@ -228,7 +228,7 @@ function finishPage() {
   // Submit eventlistener
   submitButton.addEventListener("click", function(event){
     event.preventDefault();
-    localStorage.setItem("initials", JSON.stringify(input.value));
+    localStorage.setItem("initials", JSON.stringify((input.value) + " - " + timer.textContent));
     highscoresPage();
   })
 }
@@ -332,7 +332,7 @@ function highscoresPage() {
 
   // Creating text that displays your score
   var highscoreInitials = document.createElement("p");
-  highscoreInitials.textContent = JSON.parse(localStorage.getItem("initials")) + " - " + count;
+  highscoreInitials.textContent = JSON.parse(localStorage.getItem("initials"));
   colOne.appendChild(highscoreInitials);
 
   // Creating Row Two
@@ -367,10 +367,10 @@ function highscoresPage() {
   })
 
   // Creating clearHighscores button
-  /* var clearHighscores = document.createElement("button");
+  var clearHighscores = document.createElement("button");
   clearHighscores.setAttribute("class", "btn");
   clearHighscores.textContent = "Clear Highscores";
-  colThree.appendChild(clearHighscores); */
+  colThree.appendChild(clearHighscores);
 
   // Click eventListener for clearHighscores button
   clearHighscores.addEventListener("click", function(){
