@@ -4,6 +4,7 @@ var timer = document.getElementById("countdown");
 var headText = document.getElementById("top-section");
 var mainText = document.getElementById("main-section");
 var bottomText = document.getElementById("bottom-section");
+var highscoresLink = document.getElementById("top-left");
 
 // Defining question sets in objcets
 var questionOne = {
@@ -223,6 +224,13 @@ function finishPage() {
   submitButton.setAttribute("style", "margin-left: 10px");
   submitButton.textContent = "Submit";
   form.appendChild(submitButton);
+
+  // Submit eventlistener
+  submitButton.addEventListener("click", function(event){
+    event.preventDefault();
+    localStorage.setItem("initials", JSON.stringify(input.value));
+    highscoresPage();
+  })
 }
 
 // Incrementer for question array Index
@@ -305,3 +313,72 @@ buttonFour.addEventListener("click", function () {
     bottomText.textContent = "Wrong!";
   }
 });
+
+// Highscores page
+function highscoresPage() {
+  clearPage();
+  newHeadText.textContent = "Highscores";
+  headText.appendChild(newHeadText);
+
+  // Creating Row One
+  var rowOne = document.createElement("div");
+  rowOne.setAttribute("class", "row");
+  mainText.appendChild(rowOne);
+
+  // Creating Column One  
+  var colOne = document.createElement("div");
+  colOne.setAttribute("class", "col-sm-12 text-center");
+  rowOne.appendChild(colOne);
+
+  // Creating text that displays your score
+  var highscoreInitials = document.createElement("p");
+  highscoreInitials.textContent = JSON.parse(localStorage.getItem("initials")) + " - " + count;
+  colOne.appendChild(highscoreInitials);
+
+  // Creating Row Two
+  var rowTwo = document.createElement("div");
+  rowTwo.setAttribute("class", "row");
+  mainText.appendChild(rowTwo);
+
+  // Creating Row Three
+  var rowThree = document.createElement("div");
+  rowThree.setAttribute("class", "row");
+  mainText.appendChild(rowThree);
+
+  // Creating Column Two
+  var colTwo = document.createElement("div");
+  colTwo.setAttribute("class", "col-sm-12 text-center");
+  rowTwo.appendChild(colTwo);
+
+  // Creating Column Three
+  var colThree = document.createElement("div");
+  colThree.setAttribute("class", "col-sm-12 text-center");
+  rowThree.appendChild(colThree);
+
+  // Creating backButton
+  var backButton = document.createElement("button");
+  backButton.setAttribute("class", "btn");
+  backButton.textContent = "Go back";
+  colTwo.appendChild(backButton);
+
+  // Click eventListener for backButton
+  backButton.addEventListener("click", function(){
+    window.location.reload();
+  })
+
+  // Creating clearHighscores button
+  /* var clearHighscores = document.createElement("button");
+  clearHighscores.setAttribute("class", "btn");
+  clearHighscores.textContent = "Clear Highscores";
+  colThree.appendChild(clearHighscores); */
+
+  // Click eventListener for clearHighscores button
+  clearHighscores.addEventListener("click", function(){
+    highscoreInitials.textContent = "";
+    localStorage.clear();
+  })
+}
+
+highscoresLink.addEventListener("click", function(){
+  highscoresPage();
+})
