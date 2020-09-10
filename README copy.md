@@ -1,42 +1,32 @@
-# 04 Web APIs: Code Quiz
+# Project Title
 
-As you proceed in your career as a web developer, you will probably be asked to complete a coding assessment, which is typically a combination of multiple-choice questions and interactive challenges. Build a timed code quiz with multiple-choice questions. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
+Creating a quiz using Javascript
 
-## User Story
+## Description
 
-```
-AS A coding bootcamp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
-```
+For this project, I had to create a functional quiz app that dynamically changed the content of the page with each button click.
 
-## Acceptance Criteria
+## Getting Started
 
-```
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and score
-```
+### Installing
 
-The following animation demonstrates the application functionality:
+No files are required to access this project. However, I would suggest that you go in Git Bash (or any other terminal you use), pull all files within the "gt-atl-fsf-ft-08-2020-u-c" repo, go to the "02-Homework" folder within "04-Web-APIs", and copy the "README.md" (for referencing what you are suppose to be doing).
 
-![code quiz](./Assets/04-web-apis-homework-demo.gif)
+### Executing program
 
-### Review
+Open HTML file in a browser to view how it looks visually and to see how it operates. I would recommend using console.log() in your Javascript file to see what your code is doing.
 
-You are required to submit the following for review:
+## Finished Project
 
-* The URL of the functional, deployed application.
+![Document](https://user-images.githubusercontent.com/67942678/92679257-e7515d80-f2f5-11ea-8757-f27ab1cc8405.gif)
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+## GitHub Pages link
 
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+https://kreid333.github.io/coding-quiz-challenge/
+
+## Authors
+
+Kai Reid
+[@kreid333](https://github.com/kreid333)
+
+<!-- README.md template acquired from: https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc -->
