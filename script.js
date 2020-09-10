@@ -85,6 +85,8 @@ function mainTimer() {
       clearInterval(setTimer);
     } else if (newHeadText.textContent === "All done!") {
       clearInterval(setTimer);
+    } else if (newHeadText.textContent === "Highscores") {
+      clearInterval(setTimer);
     }
   }, 1000);
 }
