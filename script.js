@@ -358,7 +358,7 @@ function highscoresPage() {
   // Creating backButton
   var backButton = document.createElement("button");
   backButton.setAttribute("class", "btn");
-  backButton.textContent = "Go back";
+  backButton.textContent = "Go Home";
   colTwo.appendChild(backButton);
 
   // Click eventListener for backButton
