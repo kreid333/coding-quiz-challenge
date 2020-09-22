@@ -1,32 +1,42 @@
-# Project Title
 
-Creating a quiz using Javascript
+# Coding Quiz Challenge
 
-## Description
 
-For this project, I had to create a functional quiz app that dynamically changed the content of the page with each button click.
+## Description 
 
-## Getting Started
+For this project, I had to create a functional quiz app that dynamically changed the content of the page with each button click. At the end of the quiz the user will have the opportunity to save their highscore, which will then be displayed on the highscores page.
 
-### Installing
+## Table of Contents
 
-No files are required to access this project. However, I would suggest that you go in Git Bash (or any other terminal you use), pull all files within the "gt-atl-fsf-ft-08-2020-u-c" repo, go to the "02-Homework" folder within "04-Web-APIs", and copy the "README.md" (for referencing what you are suppose to be doing).
+* [Usage](#usage)
+* [Finished Project](#finished-project)
+* [Credits](#credits)
+* [License](#license)
 
-### Executing program
+## Usage 
 
-Open HTML file in a browser to view how it looks visually and to see how it operates. I would recommend using console.log() in your Javascript file to see what your code is doing.
+In order to access this application, the user can click on the link below, which will redirect them to my Coding Quiz Challenge application.
+
+* [Coding Quiz Challenge](https://kreid333.github.io/coding-quiz-challenge/)
+
+From there, the user can start the quiz, and 75 second timer, by clicking the "Start Quiz". If a question is wrong, 15 seconds will be deducted from the timer; if they are right, no time will be deducted from the timer. Once the user reaches the "All Done!" page, they can enter their initials, which will be displayed on the "View Highscores" page along with what time they finished the quiz at, according to the timer.
 
 ## Finished Project
 
 ![Document](https://user-images.githubusercontent.com/67942678/92679257-e7515d80-f2f5-11ea-8757-f27ab1cc8405.gif)
 
-## GitHub Pages link
+## Credits
 
-https://kreid333.github.io/coding-quiz-challenge/
+* [Bootstrap](https://getbootstrap.com/)
 
-## Authors
+## License
 
-Kai Reid
-[@kreid333](https://github.com/kreid333)
+MIT License
 
-<!-- README.md template acquired from: https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc -->
+&copy; 2020, Kai Reid
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
